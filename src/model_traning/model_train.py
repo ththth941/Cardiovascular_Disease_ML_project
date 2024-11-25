@@ -45,7 +45,7 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 
 mean_std_values = {'mean': scaler.mean_, 'std': scaler.scale_}
-with open('E:\\Python Projects\\Heart-Disease_Project\\model\\mean_std_values_ML_2.pkl', 'wb') as f:
+with open('src\\model\\mean_std_values_ML.pkl', 'wb') as f:
     pickle.dump(mean_std_values, f)
     
 # Đưa các model vào dictionary
@@ -338,7 +338,7 @@ feature_df.T.plot.bar(title="Feature importance", legend=False);
 
 
 # Lưu mô hình có hiệu quả tốt nhất
-model_filename = 'E:\\Python Projects\\Heart-Disease_Project\\model\\model_ML_2.pkl'
+model_filename = 'E:\\Python Projects\\Heart-Disease_Project\\model\\model_ML.pkl'
 with open(model_filename, 'wb') as file:
     pickle.dump(rs_rf_model, file)
 print('Model Saved Succesfully!')
