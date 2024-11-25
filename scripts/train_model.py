@@ -1,7 +1,7 @@
+import pickle
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
-import joblib
 
 def train_logistic_regression(X_train_scaled, y_train):
     """
@@ -29,6 +29,7 @@ def train_random_forest(X_train_scaled, y_train, n_estimators=100):
 
 def save_model(model, model_name):
     """
-    Lưu mô hình đã huấn luyện vào file.
+    Lưu mô hình đã huấn luyện vào file bằng pickle.
     """
-    joblib.dump(model, model_name)
+    with open(model_name, 'wb') as file:
+        pickle.dump(model, file)
