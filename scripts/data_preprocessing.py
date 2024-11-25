@@ -6,7 +6,7 @@ def load_data(file_path):
     """
     Đọc dữ liệu từ file CSV.
     """
-    df = pd.read_csv(file_path)
+    df = pd.read_csv('data\\Cardiovascular_Disease_Dataset.csv')
     return df
 
 def preprocess_data(df):
