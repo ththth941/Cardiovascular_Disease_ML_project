@@ -336,8 +336,6 @@ print(feature_dict)
 feature_df = pd.DataFrame(feature_dict, index=[0])
 feature_df.T.plot.bar(title="Feature importance", legend=False);
 
-pd.crosstab(df.gender, df.target)
-
 
 # Lưu mô hình có hiệu quả tốt nhất
 model_filename = 'E:\\Python Projects\\Heart-Disease_Project\\model\\model_ML_2.pkl'
