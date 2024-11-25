@@ -1,3 +1,4 @@
+import pickle
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.model_selection import cross_val_score
 
@@ -23,3 +24,11 @@ def evaluate_cross_validation(model, X_scaled, y):
     """
     cv_scores = cross_val_score(model, X_scaled, y, cv=5)
     return cv_scores
+
+def load_model(model_name):
+    """
+    Tải mô hình đã lưu từ file pickle.
+    """
+    with open(model_name, 'rb') as file:
+        model = pickle.load(file)
+    return model
