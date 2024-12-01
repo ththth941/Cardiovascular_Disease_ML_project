@@ -21,4 +21,4 @@ evaluate_model(rs_log_reg.best_estimator_, X_test, y_test)
 evaluate_model(rs_rf.best_estimator_, X_test, y_test)
 
 # Save the best model
-save_model(rs_rf.best_estimator_, "models/model_ML.pkl")
+save_model(rs_rf.best_estimator_, "model/model_ML.pkl")
