@@ -40,13 +40,13 @@ Chạy file app.py --> gõ vào terminal "streamlit run code/app.py"
 
 `src/`
 ---------------------
-code:
-  pycache: Thư mục chứa các file bytecode được biên dịch từ các file Python để tăng tốc độ thực thi.
-  api.cpython-312.pyc: File bytecode của module api.py.
-  api.py: File chứa các hàm và lớp để tương tác với API hoặc các dịch vụ bên ngoài.
-  app.py: File dùng để chạy ứng dụng Web Dự đoán bệnh tim bằng streamlit.
-  Chạy file api.py trước -> gõ vào terminal "uvicorn src.code.api:app --reload"
-  Chạy file app.py --> gõ vào terminal "streamlit run src/code/app.py"
+*code:
+  *pycache: Thư mục chứa các file bytecode được biên dịch từ các file Python để tăng tốc độ thực thi.
+  *api.cpython-312.pyc: File bytecode của module api.py.
+  *api.py: File chứa các hàm và lớp để tương tác với API hoặc các dịch vụ bên ngoài.
+  *app.py: File dùng để chạy ứng dụng Web Dự đoán bệnh tim bằng streamlit.
+  *Chạy file api.py trước -> gõ vào terminal "uvicorn src.code.api:app --reload"
+  *Chạy file app.py --> gõ vào terminal "streamlit run src/code/app.py"
 data: Chứa các tập dữ liệu sử dụng để huấn luyện và đánh giá mô hình.
   Cardiovascular_Disease_Dataset.csv: File dữ liệu chính chứa thông tin về bệnh nhân.
 jupyter_notebook: Chứa các notebook Jupyter để thực hiện EDA, xây dựng và đánh giá mô hình.
