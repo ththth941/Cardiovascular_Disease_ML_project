@@ -6,8 +6,8 @@ import pandas as pd
 app = FastAPI()
 
 # Load model and scaler
-model_filename = 'Heart-Disease_Project/model/model_ML_2.pkl'
-scaler_filename = 'Heart-Disease_Project/model/mean_std_values_ML_2.pkl'
+model_filename = 'model/model_ML.pkl'
+scaler_filename = 'model/mean_std_values_ML.pkl'
 
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
