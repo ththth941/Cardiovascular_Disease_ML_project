@@ -6,6 +6,7 @@ seaborn
 pickle
 # Các thư viện cần có để chạy FastAPI
 fastapi 
+uvicorn
 pydantic
 pickle
 pandas
