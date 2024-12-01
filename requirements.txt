@@ -1,0 +1,15 @@
+# Các thư viện cần có để huấn luyện mô hình 
+pandas 
+numpy 
+matplotlib.pyplot
+seaborn
+pickle
+# Các thư viện cần có để chạy FastAPI
+fastapi 
+pydantic
+pickle
+pandas
+# Các thư viện cần có để chạy Streamlit 
+streamlit 
+requests
+pandas
