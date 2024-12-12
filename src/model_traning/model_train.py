@@ -338,7 +338,7 @@ feature_df.T.plot.bar(title="Feature importance", legend=False);
 
 
 # Lưu mô hình có hiệu quả tốt nhất
-model_filename = 'E:\\Python Projects\\Heart-Disease_Project\\model\\model_ML.pkl'
+model_filename = 'src\\model\\model_ML.pkl'
 with open(model_filename, 'wb') as file:
     pickle.dump(rs_rf_model, file)
 print('Model Saved Succesfully!')
